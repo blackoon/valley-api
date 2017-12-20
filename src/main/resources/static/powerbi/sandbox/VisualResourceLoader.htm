@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sandbox Resource Loader</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+    <script>
+        var powerbi = {
+            common: {}
+        };
+    </script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/globalize.js"></script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/globalize.cultures.js"></script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/jQuery.js"></script>
+    <script>
+        if (!window.define) { window.define = function () { } }
+    </script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/visualSandbox.externals.js"></script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/visuals.js"></script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/utility.js"></script>
+    <script>
+        powerbi.common.localizedStrings = '';
+    </script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/data.js"></script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/visualHostCore.js"></script>
+    <script type="text/javascript" src="/powerbi/libs/scripts/visualSandbox.js"></script>
+    <script>
+        $(function () {
+            powerbi.visualSandbox.createResourceLoaderHost();
+        });
+    </script>
+</body>
+</html>

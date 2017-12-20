@@ -1,0 +1,1189 @@
+/* logo */
+/* undefined color fallback */
+/* variable map */
+/* a:link styles */
+
+a {
+  color: #2066fb;
+}
+a:hover,
+a:focus {
+  color: #2066fb;
+}
+/* button styles */
+
+/* default buttons (grey in default theme) */
+
+.btn-default {
+  color: #222222;
+  background-color: #b7b7b7;
+}
+/* default hover/active/focused */
+
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:hover,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default,
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+  color: #222222;
+  background-color: #c8c8c8;
+}
+/* default disabled */
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  color: #222222;
+  background-color: #c8c8c8;
+  opacity: 0.5;
+}
+/* primary buttons (red in default theme) */
+
+.btn-primary {
+  color: #333333;
+  background-color: #f2c811;
+}
+/* primary hover/active/focused */
+
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary,
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus,
+.btn-primary.btn-upload input:focus ~ label,
+.btn-primary.btn-upload input:active ~ label {
+  color: #333333;
+  background-color: #cda521;
+}
+/* primary disabled */
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  color: #222222;
+  background-color: #c8c8c8;
+  opacity: 0.5;
+}
+/* link buttons, a simple hyperlink-styled button */
+
+.btn-link {
+  color: #f2c811;
+}
+/* link hover/active/focused */
+
+.btn-link:focus,
+.btn-link.focus,
+.btn-link:hover,
+.btn-link:active,
+.btn-link.active,
+.open > .dropdown-toggle.btn-link,
+.btn-link:active:hover,
+.btn-link.active:hover,
+.open > .dropdown-toggle.btn-link:hover,
+.btn-link:active:focus,
+.btn-link.active:focus,
+.open > .dropdown-toggle.btn-link:focus,
+.btn-link:active.focus,
+.btn-link.active.focus,
+.open > .dropdown-toggle.btn-link.focus {
+  color: #f2c811;
+}
+/* form styles */
+
+.form-control {
+  color: #222222;
+  background-color: white;
+  border-color: #dddddd;
+}
+.form-control:focus {
+  border-color: #222222;
+}
+/* default placeholder text colors */
+
+.form-control::-moz-placeholder {
+  color: rgba(34, 34, 34, 0.75);
+}
+.form-control:-ms-input-placeholder {
+  color: rgba(34, 34, 34, 0.75);
+}
+.form-control::-webkit-input-placeholder {
+  color: rgba(34, 34, 34, 0.75);
+}
+/* generic error/invalid form colours */
+
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label,
+.has-error.help-block {
+  color: #d82121;
+}
+.has-error .form-control,
+.form-control.ng-invalid,
+form .form-control.input-inline.ng-invalid {
+  border-color: #d82121;
+}
+.has-error .form-control:focus {
+  border-color: #961717;
+}
+/* checkbox/radio styling */
+
+.checkbox input:focus ~ span:first-of-type,
+.checkbox-inline input:focus ~ span:first-of-type,
+.radio input:focus ~ span:first-of-type,
+.radio-inline input:focus ~ span:first-of-type {
+  outline-color: #333333;
+}
+.checkbox input:focus ~ span:first-of-type::before,
+.checkbox-inline input:focus ~ span:first-of-type::before,
+.radio input:focus ~ span:first-of-type::before,
+.radio-inline input:focus ~ span:first-of-type::before {
+  border-color: #f2c811;
+}
+.checkbox input:checked ~ span:first-of-type::before,
+.checkbox-inline input:checked ~ span:first-of-type::before {
+  color: #333333;
+  border-color: #f2c811;
+  background-color: #f2c811;
+}
+.checkbox input:checked:focus ~ span:first-of-type::before,
+.checkbox-inline input:checked:focus ~ span:first-of-type::before {
+  border-color: #333333;
+}
+.checkbox input:disabled:not(:checked) ~ span:first-of-type::before,
+.checkbox-inline input:disabled:not(:checked) ~ span:first-of-type::before {
+  background-color: transparent;
+  border-color: #dddddd;
+}
+.checkbox input:disabled ~ span:first-of-type::before,
+.checkbox-inline input:disabled ~ span:first-of-type::before {
+  color: #333333;
+  border-color: #dddddd;
+  background-color: #dddddd;
+}
+.checkbox label span:first-of-type::before,
+.checkbox-inline label span:first-of-type::before,
+.radio label span:first-of-type::before,
+.radio-inline label span:first-of-type::before {
+  border-color: #333333;
+}
+.radio input:checked ~ span:first-of-type::before,
+.radio-inline input:checked ~ span:first-of-type::before {
+  background-color: #333333;
+}
+/* buttons attached to input boxes */
+
+.input-group-btn .btn {
+  border-color: #dddddd;
+  color: #222222;
+  background-color: #dddddd;
+}
+.input-group-btn .btn:hover,
+.input-group-btn .btn:active,
+.input-group-btn .btn:focus {
+  color: #222222;
+  background-color: #eaeaea;
+}
+.input-group-btn .btn[disabled],
+.input-group-btn .btn[disabled]:hover,
+.input-group-btn .btn[disabled]:active,
+.input-group-btn .btn[disabled]:focus {
+  border-color: #dddddd;
+  background-color: #eaeaea;
+}
+.has-error .input-group-btn .btn {
+  border-color: #d82121;
+}
+/* generic table styles */
+
+.table > thead > tr > th {
+  border-bottom-color: #999999;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-top-color: #999999;
+}
+/* body styles */
+
+body {
+  color: #333333;
+  background-color: #eaeaea;
+}
+/* dropdown menu styles */
+
+.dropdown-menu {
+  background-color: white;
+}
+.dropdown-menu > li > a {
+  color: #222222;
+  border-bottom-color: #eeeeee;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #222222;
+  background-color: #eaeaea;
+}
+.dropdown-header {
+  color: #666666;
+}
+/* unchecked checkbox style */
+
+.dropdown-checkboxes > .checkable > a span.unchecked {
+  background-color: white;
+  color: rgba(34, 34, 34, 0.6);
+}
+/* checked checkbox style */
+
+.dropdown-checkboxes > .checkable > a span.checked {
+  background-color: white;
+}
+/* navbar */
+
+.navbar-default {
+  background-color: black;
+}
+.navbar-default .navbar-nav > li > a {
+  background-color: black;
+  color: #f9f9f9;
+  border-left-color: rgba(249, 249, 249, 0.3);
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f9f9f9;
+  background-color: #be9a27;
+  border-left-color: rgba(249, 249, 249, 0.3);
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: white;
+  color: #222222;
+}
+/* the username has no anchor; it needs to be styled independently */
+
+.navbar-default .navbar-nav > li.nav-user > span {
+  background-color: black;
+  color: #f9f9f9;
+  border-left-color: rgba(249, 249, 249, 0.3);
+}
+/* colored navbar items */
+
+/* alerts */
+
+.navbar-default .navbar-nav > li.nav-alerts > a {
+  color: #f4dc23;
+}
+/* brand text/image */
+
+.navbar-default .navbar-brand {
+  color: #f9f9f9;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand:focus {
+  color: #f9f9f9;
+}
+/* to display a logo instead of text, set
+        span.text to display:none;
+            and
+        span.logo to display:block;
+    */
+/* toolbar */
+
+.toolbar {
+  background-color: #333333;
+  border-bottom-color: #333333;
+  color: #f9f9f9;
+}
+.toolbar .nav > li > a,
+.toolbar .nav > li > button,
+.toolbar .nav > li > .btn-upload {
+  background-color: #333333;
+  color: #f9f9f9;
+}
+.toolbar .nav > li > a:hover,
+.toolbar .nav > li > a:focus,
+.toolbar .nav > li > button:hover:enabled,
+.toolbar .nav > li > button:focus:enabled,
+.toolbar .nav > li > .btn-upload:hover,
+.toolbar .nav > li > a.comments-open {
+  background-color: #666666;
+}
+.toolbar .nav > li > a.active,
+.toolbar .nav > li > a.active:hover,
+.toolbar .nav > li > a.active:focus {
+  background-color: #666666;
+}
+.toolbar .nav > .open > a,
+.toolbar .nav > .open > a:focus,
+.toolbar .nav > .open > a:hover {
+  background-color: #666666;
+  color: #f9f9f9;
+}
+.toolbar.page-color,
+.toolbar.page-color .nav > li > a {
+  color: #333333;
+  background-color: #eaeaea;
+}
+.toolbar.page-color.top-bottom-border {
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+}
+.toolbar.page-color .nav > li > a:hover,
+.toolbar.page-color .nav > li > a:focus {
+  background-color: white;
+}
+.toolbar.page-color .nav > .open > a,
+.toolbar.page-color .nav > .open > a:focus,
+.toolbar.page-color .nav > .open > a:hover {
+  color: #333333;
+}
+.toolbar .nav li.bar-divider {
+  background-color: #dddddd;
+}
+/* toolbar search box */
+
+.toolbar .nav-search {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+.toolbar .nav-search .input-group {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+.toolbar .nav-search input {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #f9f9f9;
+}
+.toolbar .nav-search input::-webkit-input-placeholder {
+  color: rgba(249, 249, 249, 0.5);
+}
+.toolbar .nav-search input::-moz-placeholder {
+  color: rgba(249, 249, 249, 0.5);
+}
+.toolbar .nav-search input:-ms-input-placeholder {
+  color: rgba(249, 249, 249, 0.5);
+}
+.toolbar .nav-search input:focus {
+  color: #f9f9f9;
+}
+.toolbar .nav-search button {
+  color: #f9f9f9;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.toolbar .nav-search button:hover,
+.toolbar .nav-search button:focus,
+.toolbar .nav-search button:active {
+  color: #f9f9f9;
+  background-color: #666666;
+}
+.toolbar .nav-move button:disabled,
+.toolbar .nav-delete button:disabled {
+  color: #666666;
+}
+/* tooltips */
+
+.tooltip-inner {
+  background-color: white;
+  color: #222222;
+}
+/* main footer styles */
+
+footer.main {
+  background-color: #222222;
+  border-top-color: #999999;
+}
+footer.main a {
+  color: #2066fb;
+}
+footer.main a:hover,
+footer.main a:focus {
+  color: #2066fb;
+}
+/* breadcrumbs */
+
+section.breadcrumbs {
+  background-color: white;
+}
+section.breadcrumbs .links a {
+  color: #2066fb;
+}
+section.breadcrumbs .links a:hover,
+section.breadcrumbs .links a:active,
+section.breadcrumbs .links a:focus {
+  color: #2066fb;
+}
+section.breadcrumbs .links .separator {
+  color: #b7b7b7;
+}
+section.breadcrumbs .links .current {
+  color: #333333;
+}
+comments-pane {
+  color: #333333;
+  background-color: #eaeaea;
+  border-color: #eaeaea;
+}
+.comments-edited,
+.comments-editing,
+.comments-date {
+  color: #222222;
+}
+comment,
+comments-pane > .comments-form,
+.last-comment,
+.comment-reply {
+  background-color: white;
+  border-color: #eaeaea;
+}
+.comments-sort-unselected,
+.comments-sort-unselected:hover {
+  color: #666666;
+}
+.comments-sort-selected,
+.comments-sort-selected:hover {
+  color: #333333;
+  border-color: #f2c811;
+}
+.comment-metadata a {
+  color: #666666;
+}
+.comment-metadata a:hover {
+  color: #333333;
+}
+.comments-pane .ng-invalid textarea,
+.comments-pane textarea {
+  border-color: #c8c8c8;
+}
+.comments-pane textarea:focus {
+  border-color: #f2c811;
+}
+.last-comment {
+  border-color: #eaeaea;
+}
+.comments-form > hr {
+  border-color: #eaeaea;
+}
+.new-comment-text > textarea:invalid {
+  outline-color: #c8c8c8;
+}
+.new-comment-text > textarea:-ms-input-placeholder {
+  color: #222222;
+}
+/* browse/favorites styles */
+
+/* header text (current folder; section (KPIs, Reports) titles) */
+
+div.browser header h2 {
+  color: #333333;
+}
+/* number of items label */
+
+div.browser header .count {
+  color: #333333;
+}
+/* tile context menu button (...) */
+
+/* and 'favorite' star */
+
+/* these styles can be overridden on a per-item type basis *
+/* tile context menu/favorite */
+
+.tiles a.context {
+  color: #333333;
+  background-color: transparent;
+}
+.tiles a.context:hover,
+.tiles a.context:focus,
+.tiles a.context:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* modal dialog styles */
+
+.modal-backdrop {
+  background-color: white;
+}
+.modal-content {
+  border-color: #eeeeee;
+  background-color: white;
+  color: #222222;
+}
+.modal-header .close {
+  color: #222222;
+}
+/* sometimes a dialog box is used as a folder browser */
+
+.modal-browse .modal-body.browse {
+  background-color: #eaeaea;
+}
+.modal-browse section.folders {
+  background-color: white;
+}
+/* folder section of browse page */
+
+section.header {
+  background-color: white;
+  border-bottom-color: #999999;
+}
+section.header header h2 {
+  color: #333333;
+}
+/* folder tiles */
+
+section.folders .tiles a.tile {
+  color: #333333;
+  background-color: white;
+  border-color: rgba(51, 51, 51, 0.15);
+}
+section.folders .tiles a.tile:hover,
+section.folders .tiles a.tile:active,
+section.folders .tiles a.tile:focus {
+  color: #333333;
+  border-color: #333333;
+}
+/* data sources context menu */
+
+section.folders .tiles a.context {
+  color: #333333;
+}
+section.folders .tiles a.context:hover,
+section.folders .tiles a.context:focus,
+section.folders .tiles a.context:active {
+  color: #333333;
+  background-color: rgba(51, 51, 51, 0.1);
+}
+/* KPI tiles */
+
+/* good -- usually green */
+
+.kpi-good {
+  background-color: #79c75b;
+}
+/* bad -- usually red */
+
+.kpi-bad {
+  background-color: #c0433a;
+}
+/* neutral -- usually yellow/amber */
+
+.kpi-neutral {
+  background-color: #cda521;
+}
+/* none -- usually grey */
+
+.kpi-none {
+  background-color: #333333;
+}
+/* KPI tile text color */
+
+.kpi a.tile {
+  color: white;
+}
+/* specific kpi text color */
+
+.kpi-good a.tile {
+  color: white;
+}
+.kpi-bad a.tile {
+  color: white;
+}
+.kpi-neutral {
+  color: white;
+}
+.kpi-none a.tile {
+  color: white;
+}
+/* outer tile border */
+
+.kpi a.tile .overlay {
+  border-color: #333333;
+  opacity: 0.15;
+}
+/* inner tile border */
+
+.kpi a.tile .overlay .inner {
+  border-color: white;
+}
+/* kpis context menu */
+
+.kpi a.context {
+  color: white;
+}
+.kpi a.context:hover,
+.kpi a.context:focus,
+.kpi a.context:active {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* specific kpi context colors */
+
+/* kpis context menu */
+
+.kpi-good a.context {
+  color: white;
+}
+.kpi-good a.context:hover,
+.kpi-good a.context:focus,
+.kpi-good a.context:active {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.kpi-bad a.context {
+  color: white;
+}
+.kpi-bad a.context:hover,
+.kpi-bad a.context:focus,
+.kpi-bad a.context:active {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.kpi-neutral a.context {
+  color: white;
+}
+.kpi-neutral a.context:hover,
+.kpi-neutral a.context:focus,
+.kpi-neutral a.context:active {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.kpi-none a.context {
+  color: white;
+}
+.kpi-none a.context:hover,
+.kpi-none a.context:focus,
+.kpi-none a.context:active {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* mobile reports */
+
+section.mobile-reports .tiles a.tile {
+  color: #333333;
+  background-color: white;
+  border-color: rgba(51, 51, 51, 0.15);
+}
+section.mobile-reports .tiles a.tile:hover,
+section.mobile-reports .tiles a.tile:active,
+section.mobile-reports .tiles a.tile:focus {
+  color: #333333;
+  border-color: #333333;
+}
+section.mobile-reports .tiles a.tile .text {
+  border-bottom-color: rgba(51, 51, 51, 0.15);
+}
+/* mobile reports context menu */
+
+section.mobile-reports .tiles a.context {
+  color: #333333;
+}
+section.mobile-reports .tiles a.context:hover,
+section.mobile-reports .tiles a.context:focus,
+section.mobile-reports .tiles a.context:active {
+  color: #333333;
+  background-color: rgba(51, 51, 51, 0.1);
+}
+/* reports */
+
+section.reports .tiles a.tile {
+  color: #333333;
+  background-color: white;
+  border-color: rgba(51, 51, 51, 0.15);
+}
+section.reports .tiles a.tile:hover,
+section.reports .tiles a.tile:active,
+section.reports .tiles a.tile:focus {
+  color: #333333;
+  border-color: #333333;
+}
+/* reports context menu */
+
+section.reports .tiles a.context {
+  color: #333333;
+}
+section.reports .tiles a.context:hover,
+section.reports .tiles a.context:focus,
+section.reports .tiles a.context:active {
+  color: #333333;
+  background-color: rgba(51, 51, 51, 0.1);
+}
+/* power bi reports */
+
+section.powerbireports .tiles a.tile {
+  color: #333333;
+  background-color: white;
+  border-color: rgba(51, 51, 51, 0.15);
+}
+section.powerbireports .tiles a.tile:hover,
+section.powerbireports .tiles a.tile:active,
+section.powerbireports .tiles a.tile:focus {
+  color: #333333;
+  border-color: #333333;
+}
+/* reports context menu */
+
+section.powerbireports .tiles a.context {
+  color: #333333;
+}
+section.powerbireports .tiles a.context:hover,
+section.powerbireports .tiles a.context:focus,
+section.powerbireports .tiles a.context:active {
+  color: #333333;
+  background-color: rgba(51, 51, 51, 0.1);
+}
+/* excel workbooks */
+
+section.excel .tiles a.tile {
+  color: #333333;
+  background-color: white;
+  border-color: rgba(51, 51, 51, 0.15);
+}
+section.excel .tiles a.tile:hover,
+section.excel .tiles a.tile:active,
+section.excel .tiles a.tile:focus {
+  color: #333333;
+  border-color: #333333;
+}
+/* excel workbooks menu */
+
+section.excel .tiles a.context {
+  color: #333333;
+}
+section.excel .tiles a.context:hover,
+section.excel .tiles a.context:focus,
+section.excel .tiles a.context:active {
+  color: #333333;
+  background-color: rgba(51, 51, 51, 0.1);
+}
+/* data sources */
+
+section.datasources .tiles a.tile {
+  color: #333333;
+  background-color: white;
+  border-color: rgba(51, 51, 51, 0.15);
+}
+section.datasources .tiles a.tile:hover,
+section.datasources .tiles a.tile:active,
+section.datasources .tiles a.tile:focus {
+  color: #333333;
+  border-color: #333333;
+}
+/* data sources context menu */
+
+section.datasources .tiles a.context {
+  color: #333333;
+}
+section.datasources .tiles a.context:hover,
+section.datasources .tiles a.context:focus,
+section.datasources .tiles a.context:active {
+  color: #333333;
+  background-color: rgba(51, 51, 51, 0.1);
+}
+/* resources */
+
+section.resources .tiles a.tile {
+  color: #333333;
+  background-color: white;
+  border-color: rgba(51, 51, 51, 0.15);
+}
+section.resources .tiles a.tile:hover,
+section.resources .tiles a.tile:active,
+section.resources .tiles a.tile:focus {
+  color: #333333;
+  border-color: #333333;
+}
+/* resources context menu */
+
+section.resources .tiles a.context {
+  color: #333333;
+}
+section.resources .tiles a.context:hover,
+section.resources .tiles a.context:focus,
+section.resources .tiles a.context:active {
+  color: #333333;
+  background-color: rgba(51, 51, 51, 0.1);
+}
+/* datasets */
+
+section.datasets .tiles a.tile {
+  color: #333333;
+  background-color: white;
+  border-color: rgba(51, 51, 51, 0.15);
+}
+section.datasets .tiles a.tile:hover,
+section.datasets .tiles a.tile:active,
+section.datasets .tiles a.tile:focus {
+  color: #333333;
+  border-color: #333333;
+}
+/* datasets context menu */
+
+section.datasets .tiles a.context {
+  color: #333333;
+}
+section.datasets .tiles a.context:hover,
+section.datasets .tiles a.context:focus,
+section.datasets .tiles a.context:active {
+  color: #333333;
+  background-color: rgba(51, 51, 51, 0.1);
+}
+/* popover */
+
+/* the little box that appears when a tile's context button is clicked */
+
+/* smaller form-factors render this box fullscreen */
+
+/* this is the semi-opaque background behind the popover */
+
+.popover-wrapper.fullscreen {
+  background-color: rgba(51, 51, 51, 0.68);
+}
+.popover {
+  border-color: #eeeeee;
+  background-color: white;
+  color: #222222;
+}
+/* a popover's stem is the little arrow pointing to the context button on an item tile */
+
+/* .popover-wrapper.top should have color values the same as .metadata footer background-color (see below) */
+
+.popover-wrapper.top .popover {
+  border-bottom-color: #eeeeee;
+}
+.popover-wrapper.top .stem {
+  border-top-color: #eeeeee;
+}
+/* .popover-wrapper.bottom should have color values the same as the .popover background-color (see above) */
+
+.popover-wrapper.bottom .popover {
+  border-top-color: white;
+}
+.popover-wrapper.bottom .stem {
+  border-bottom-color: white;
+}
+/* metadata: the content of the popover */
+
+section.metadata button.close {
+  color: #222222;
+}
+section.metadata footer {
+  background-color: white;
+}
+section.metadata footer div.actions-group {
+  border-top-color: #eeeeee;
+}
+section.metadata footer a {
+  color: #222222;
+}
+section.metadata footer a:hover,
+section.metadata footer a:active,
+section.metadata footer a:focus {
+  background-color: #eaeaea;
+}
+/* fullscreen popovers display the footer links stacked vertically, not horizontally */
+
+.popover-wrapper.fullscreen .metadata footer a {
+  border-top-color: #eeeeee;
+}
+/* management section */
+
+/* when clicking on a tile's 'manage' link, the user is directed
+to the management section, itself containing several subsections */
+
+section.management header {
+  background-color: white;
+}
+section.management header h2 {
+  color: #333333;
+}
+/* management subsections have a sidebar containing links to other subsections */
+
+section.management section.sidebar {
+  background-color: #333333;
+}
+section.management section.sidebar nav button {
+  color: #f9f9f9;
+}
+section.management section.sidebar nav li button {
+  color: #c8c8c8;
+}
+section.management section.sidebar nav li button:hover,
+section.management section.sidebar nav li button:focus {
+  color: #f9f9f9;
+}
+section.management section.sidebar nav li.active button {
+  background-color: #333333;
+  border-left-color: #f2c811;
+  color: #f9f9f9;
+}
+section.management section.sidebar nav li button:disabled {
+  color: #666666;
+}
+/* the 'details' area of each management subsection is where the main content is rendered */
+
+section.management > .content .details {
+  color: #222222;
+  background-color: #eaeaea;
+}
+/* some subsections have an 'action' toolbar above the details area */
+
+section.management .actions {
+  background-color: #eaeaea;
+  border-bottom-color: #c8c8c8;
+}
+section.management .actions li {
+  border-right-color: #c8c8c8;
+}
+section.management .actions a,
+section.management .actions .btn-replace {
+  color: #222222;
+  background-color: #eaeaea;
+  border-right-color: #c8c8c8;
+}
+section.management .actions a:hover,
+section.management .actions a:active,
+section.management .actions a:focus,
+section.management .actions .btn-replace:hover,
+section.management .actions .btn-replace input:active + label,
+section.management .actions .btn-replace input:focus + label {
+  color: #222222;
+  background-color: #dddddd;
+}
+/* some subsections have specific background colors */
+
+section.management .security,
+section.management .security-edit,
+section.management .subscriptions,
+section.management .subscriptions-edit,
+section.management .site-settings,
+section.management .site-general,
+section.management .schedules {
+  background-color: white;
+}
+/* branding styles */
+
+/* for aesthetic purposes, the brand package name is rendered in a disabled input field */
+
+/* but it shouldn't appear greyed out */
+
+section.management .branding .current input[disabled],
+section.management .current input[disabled] {
+  color: #222222;
+  background-color: white;
+}
+/* KPI creation/editing subsection */
+
+/* override the Bootstrap default colors */
+
+section.management .editkpi input,
+section.management .editkpi select,
+section.management .editkpi textarea,
+section.management .editkpi option {
+  color: #222222;
+}
+/* for aesthetic purposes, a 'not set' value is rendered with a semi-opaque disabled input field */
+
+section.management .editkpi .form-inactive .form-control[disabled] {
+  background-color: white;
+  opacity: 0.25;
+}
+/* also for aesthetic purposes, a dataset field or trend that has yet to be set is rendered with a disable input field */
+
+/* this input field contains the text 'not set' and urges the user to set a value */
+
+section.management .editkpi .form-dataset .form-control[disabled] {
+  color: #222222;
+  background-color: white;
+}
+/* Visualization selector elements */
+
+/* the glyphs are taken from a 32-bit PNG spritesheet which cannot be customized. The foreground colour is white */
+
+/* therefore a dark background should be used */
+
+ul.visualizations li a {
+  background-color: #333333;
+}
+ul.visualizations li a.enabled:hover {
+  background-color: #666666;
+}
+/* the <i> element is rendered as a colored frame around a selected glyph */
+
+ul.visualizations li i {
+  border-color: #f2c811;
+}
+ul.visualizations li.selected a {
+  background-color: black;
+}
+/* some form elements have tooltips/hints denoted by a question mark */
+
+.has-tooltip span.hint {
+  color: white;
+  background-color: #287a90;
+}
+.has-tooltip span.hint:focus {
+  outline-color: #222222;
+}
+/* the browse for dataset dialog box uses many styles defined above in the dialog box section but it still requires some specific styles */
+
+/* once a dataset is picked, the user is presented with a table from which they can select the appriopriate column */
+
+.modal-browse section.select table {
+  border-top-color: #eeeeee;
+}
+.modal-browse section.select th.selected,
+.modal-browse section.select td.selected {
+  background-color: white;
+}
+/* Miscellaneous styles that don't belong to any particular section */
+
+.success-indicator {
+  color: #55b33c;
+}
+.failure-indicator {
+  color: #d82121;
+}
+.multi-value-drop-down [readonly].form-control {
+  background-color: white;
+}
+.serviceError {
+  background-color: white;
+}
+.multiline-ellipsis::before {
+  background: white;
+}
+.multiline-ellipsis::after {
+  background: white;
+}
+/* Schedule management */
+
+.schedule .input-inline.ng-invalid {
+  border-color: #d82121;
+}
+.schedule .input-inline-long.ng-invalid {
+  border-color: #d82121;
+}
+.schedule-reference a[disabled] {
+  color: rgba(34, 34, 34, 0.5);
+}
+.management div[disabled=disabled] label {
+  color: rgba(34, 34, 34, 0.25);
+}
+.search header.message .input-search .btn-primary {
+  color: #333333;
+  background-color: #f2c811;
+  border-color: #f2c811;
+}
+.search header.message .input-search .btn-primary:hover,
+.search header.message .input-search .btn-primary:focus {
+  color: #333333;
+  background-color: #cda521;
+  border-color: #cda521;
+}
+/* ***************************************************************** */
+
+/* mobile-only styles */
+
+@media (max-width: 767px) {
+  /* hamburger toggle button */
+  
+  .mobilenav-toggle,
+  .mobilenav-toggle:focus {
+    color: #f9f9f9;
+    background-color: black;
+  }
+  .mobilenav-toggle:hover {
+    color: #f9f9f9;
+    background-color: #be9a27;
+  }
+  .mobilenav-toggle.open,
+  .mobilenav-toggle.open:focus,
+  .mobilenav-toggle.open:hover {
+    background-color: white;
+    color: #222222;
+  }
+  .dropdown-menu {
+    border-bottom-color: #333333;
+  }
+  /* alerts icon in dropdown menu */
+  
+  .dropdown-menu > li.nav-alerts > a > .glyphui-warning {
+    color: #f4dc23;
+  }
+  .dropdown-menu .glyphui-chevron-right.pull-right {
+    color: rgba(34, 34, 34, 0.4);
+  }
+  /* search placeholder text */
+  
+  .toolbar .nav-search input::-webkit-input-placeholder {
+    color: rgba(34, 34, 34, 0.75);
+  }
+  .toolbar .nav-search input::-moz-placeholder {
+    color: rgba(34, 34, 34, 0.75);
+  }
+  .toolbar .nav-search input:-ms-input-placeholder {
+    color: rgba(34, 34, 34, 0.75);
+  }
+}
+@media (max-width: 374px) {
+  .modal-backdrop {
+    background-color: #333333;
+  }
+}
