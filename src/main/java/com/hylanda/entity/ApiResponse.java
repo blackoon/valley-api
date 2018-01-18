@@ -1,4 +1,7 @@
 package com.hylanda.entity;
+
+import com.alibaba.fastjson.JSONObject;
+
 /** 
  * @author zhangy
  * @E-mail:blackoon88@gmail.com 
@@ -8,7 +11,7 @@ package com.hylanda.entity;
  */
 public class ApiResponse {
 	private String info;
-	
+	private JSONObject data;
 	private String status;
 	
 	public  ApiResponse() {
@@ -37,6 +40,12 @@ public class ApiResponse {
 
 	public void setStatus(String status) {
 		this.status = status;
+	}
+	public JSONObject getData() {
+		return data;
+	}
+	public void setData(JSONObject data) {
+		this.data = data;
 	}
 	
 	

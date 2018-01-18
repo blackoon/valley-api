@@ -23,5 +23,13 @@ public class UrlConstantHelper {
 	//Creates a new Folder CatalogItem.
 	public static final String folder_post="/reports/api/v2.0/catalogitems";
 	
+	/**
+	 * 下载文件
+	 */
+	public static final String download_get="/reports/api/v2.0/CatalogItems(Path='/path')/Content/$value";
 	
+	/**
+	 * 获取用户下的报表列表
+	 */
+	public static final String catalogItem_get="/reports/api/v2.0/catalogitems(Path='/path')/Model.Folder/catalogitems/?$orderby=name%20ASC";
 }

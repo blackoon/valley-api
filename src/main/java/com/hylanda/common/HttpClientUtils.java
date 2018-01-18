@@ -3,9 +3,8 @@ package com.hylanda.common;
 import java.io.IOException;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
-
 import javax.servlet.http.HttpServletResponse;
-
+import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHost;
 import org.apache.http.HttpStatus;
@@ -71,7 +70,69 @@ public class HttpClientUtils {
 		context.setCredentialsProvider(credsProvider);
 		return context;
 	}
-	
+	public String  httpGetFile(String hostname,int port,String scheme,
+			String uri, Map<String, String> headParams,
+			HttpClientContext context,JSONObject res) throws ClientProtocolException, IOException {
+		CloseableHttpClient httpclient = httpClientAtomicReference.get();
+		HttpHost target = new HttpHost(hostname, port, scheme);  //"www.microsoft.com", 80, "http"
+		//使用轻量级的请求来触发NTLM认证  
+		HttpGet httpget = new HttpGet(uri); //"/ntlm-protected/info"
+		if(headParams!=null){
+		    for (Map.Entry<String, String> entry : headParams.entrySet()) {
+		    	httpget.setHeader(entry.getKey(), entry.getValue());
+			}
+		}
+		String is=null;
+		CloseableHttpResponse response1 = httpclient.execute(target, httpget,context); 
+		try {  
+			HttpEntity httpEntity = response1.getEntity();
+			Header[] headers=response1.getHeaders("Content-Disposition");
+			if(headers!=null&&headers.length>0){
+				res.put("Content-Disposition", headers[0].getValue());
+			}
+			String contentType=httpEntity.getContentType().getValue();
+			res.put("contentType", contentType);
+			is=EntityUtils.toString(httpEntity);
+			EntityUtils.consume(httpEntity);
+		} finally {  
+		    try {
+				response1.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}  
+		}
+		return is;
+	}
+	public String  httpGetAzureFile(
+			String uri, Map<String, String> headParams,JSONObject res) throws ClientProtocolException, IOException {
+		CloseableHttpClient httpclient = httpClientAtomicReference.get();
+		HttpGet httpget = new HttpGet(uri);
+		if(headParams!=null){
+		    for (Map.Entry<String, String> entry : headParams.entrySet()) {
+		    	httpget.setHeader(entry.getKey(), entry.getValue());
+			}
+		}
+		String is=null;
+		CloseableHttpResponse response1 = httpclient.execute(httpget);
+		try {  
+			HttpEntity httpEntity = response1.getEntity();
+			Header[] headers=response1.getHeaders("Content-Disposition");
+			if(headers!=null&&headers.length>0){
+				res.put("Content-Disposition", headers[0].getValue());
+			}
+			String contentType=httpEntity.getContentType().getValue();
+			res.put("contentType", contentType);
+			is=EntityUtils.toString(httpEntity);
+			EntityUtils.consume(httpEntity);
+		} finally {  
+		    try {
+				response1.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}  
+		}
+		return is;
+	}
 	public String httpGet(String hostname,int port,String scheme,String uri,Map<String, String> headParams,HttpClientContext context) throws ClientProtocolException, IOException{
 		CloseableHttpClient httpclient = httpClientAtomicReference.get();
 		HttpHost target = new HttpHost(hostname, port, scheme);  //"www.microsoft.com", 80, "http"
@@ -592,6 +653,8 @@ public class HttpClientUtils {
 		}
 		
 	}
+
+	
 
 	
 	

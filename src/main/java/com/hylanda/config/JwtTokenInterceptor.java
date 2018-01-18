@@ -35,7 +35,7 @@ public class JwtTokenInterceptor implements HandlerInterceptor{
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object o) throws Exception {
 
         //自动排除生成token的路径,并且如果是options请求是cors跨域预请求，设置allow对应头信息
-        if(request.getRequestURI().equals("/token") || RequestMethod.OPTIONS.toString().equals(request.getMethod()))
+        if(request.getRequestURI().equals("/token")||request.getRequestURI().equals("/api/download") || RequestMethod.OPTIONS.toString().equals(request.getMethod()))
         {
             return true;
         }
@@ -53,6 +53,8 @@ public class JwtTokenInterceptor implements HandlerInterceptor{
             String subject=claims.getSubject();
             String token=request.getParameter("appId");
             if(Account.nifi.name.equals(subject)&&Account.nifi.name.equals(token)){
+            	
+            	
             	return true;
             }else{
             	if(claims.getExpiration().getTime()<System.currentTimeMillis())
